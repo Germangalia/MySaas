@@ -35,4 +35,22 @@ return [
         'secret' => env('STRIPE_SECRET'),
     ],
 
+    'github' => [
+        'client_id' => env('SOCIALITE_GITHUB_ID'),
+        'client_secret' => env('SOCIALITE_GITHUB_SECRET'),
+        'redirect' => 'http://localhost:8000/auth/github/callback',
+    ],
+
+    'facebook' => [
+        'client_id' => env('SOCIALITE_FACEBOOK_ID'),
+        'client_secret' => env('SOCIALITE_FACEBOOK_SECRET'),
+        'redirect' => 'http://localhost:8000/auth/facebook/callback',
+    ],
+
+    'google' => [
+        'client_id' => env('SOCIALITE_GOOGLE_ID'),
+        'client_secret' => env('SOCIALITE_GOOGLE_SECRET'),
+        'redirect' => 'http://localhost:8000/auth/google/callback',
+    ],
+
 ];
