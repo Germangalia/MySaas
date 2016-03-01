@@ -41,4 +41,8 @@ Route::group(['middleware' => ['web']], function () {
     Route::get('csstransitions', function(){
         return view('tinkering.csstransitions');
     });
+
+    Route::get('onesignal', function(){
+        return view('notifications.onesignal');
+    });
 });
