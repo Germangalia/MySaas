@@ -38,19 +38,25 @@ return [
     'github' => [
         'client_id' => env('SOCIALITE_GITHUB_ID'),
         'client_secret' => env('SOCIALITE_GITHUB_SECRET'),
-        'redirect' => 'http://localhost:8000/auth/github/callback',
+        'redirect' => env('SOCIALITE_GITHUB_URL'),
     ],
 
     'facebook' => [
         'client_id' => env('SOCIALITE_FACEBOOK_ID'),
         'client_secret' => env('SOCIALITE_FACEBOOK_SECRET'),
-        'redirect' => 'http://localhost:8000/auth/facebook/callback',
+        'redirect' => env('SOCIALITE_FACEBOOK_URL'),
+    ],
+
+    'twitter' => [
+        'client_id' => env('SOCIALITE_TWITTER_ID'),
+        'client_secret' => env('SOCIALITE_TWITTER_SECRET'),
+        'redirect' => env('SOCIALITE_TWITTER_URL'),
     ],
 
     'google' => [
         'client_id' => env('SOCIALITE_GOOGLE_ID'),
         'client_secret' => env('SOCIALITE_GOOGLE_SECRET'),
-        'redirect' => 'http://localhost:8000/auth/google/callback',
+        'redirect' => env('SOCIALITE_GOOGLE_URL'),
     ],
 
 ];

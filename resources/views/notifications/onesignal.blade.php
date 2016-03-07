@@ -67,4 +67,76 @@
         <!--<h2>Notifications: @{{notifications | json}}</h2>-->
 
     </div>
+
+    <script>
+        new Vue({
+            el: 'body',
+            components: { App },
+            data: function() {
+                return {
+                    // note: changing this line won't causes changes
+                    // with hot-reload because the reloaded component
+                    // preserves its current state and we are modifying
+                    // its initial state.
+                    notification_message: "Notificació per defecte!",
+                    notifications: notificationsStorage.fetch()
+                }
+            },
+            computed: {
+                total: function () {
+                    return this.notifications.length;
+                }
+            },
+            watch: {
+                notifications: {
+                    handler: function (notifications) {
+                        notificationsStorage.save(notifications);
+                    },
+                    deep: true
+                }
+            },
+            methods: {
+                clear: function () {
+                    this.notifications = [];
+                    notificationsStorage.save([]);
+                },
+                removeNotification: function (notification) {
+                    this.notifications.$remove(notification);
+                },
+                notify: function () {
+                    console.debug("Click OK!");
+                    this.notifications.push({message: $('#notificationMessage').val(), date: new Date().toLocaleString()});
+                    this.notification_message = $('#notificationMessage').val();
+                    this.notifyAjax();
+                },
+                notifyAjax: function () {
+
+                    $.ajax({
+                        type: "POST",
+                        url: "https://onesignal.com/api/v1/notifications?app_id=60d7c430-7c02-4499-9140-3d0c6cba98f0",
+                        beforeSend: function (xhr) {
+                            xhr.setRequestHeader('Authorization', 'Basic YmRlYjk2M2ItODRkMS00ODg5LTg3NDAtZjUzMmU2OGVmYTky'),
+                                    xhr.setRequestHeader('Content-Type', 'application/json')
+                        },
+                        data: JSON.stringify({
+                            "app_id": "60d7c430-7c02-4499-9140-3d0c6cba98f0",
+                            "included_segments": ["All"],
+                            "data": {"foo": "bar"},
+                            "content_available":true,
+                            "contents": {"en": this.notification_message,"es": this.notification_message},
+                            "headings": {"en": this.notification_message,"es": this.notification_message},
+                            "isAndroid": true,
+                            "android_sound": "notification",
+                            "android_led_color": "FF0000FF",
+                            "android_visibility": 1
+                        }),
+                        dataType: "json"
+                    }).done(function (data) {
+                        console.log(data);
+                    });
+                },
+            }
+        });
+    </script>
+
 @endsection
