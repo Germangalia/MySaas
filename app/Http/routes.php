@@ -1,5 +1,4 @@
 <?php
-
 /*
 |--------------------------------------------------------------------------
 | Routes File
@@ -10,11 +9,9 @@
 | and give it the controller to call when that URI is requested.
 |
 */
-
 Route::get('/', function () {
     return view('welcome');
 });
-
 /*
 |--------------------------------------------------------------------------
 | Application Routes
@@ -25,24 +22,16 @@ Route::get('/', function () {
 | kernel and includes session state, CSRF protection, and more.
 |
 */
-
 Route::group(['middleware' => ['web']], function () {
     //
-
-    Route::get('auth/github', 'Auth\AuthController@redirectToProvider');
-    Route::get('auth/github/callback', 'Auth\AuthController@handleProviderCallback');
-
-    Route::get('auth/facebook', 'Auth\AuthController@redirectToProvider');
-    Route::get('auth/facebook/callback', 'Auth\AuthController@handleProviderCallback');
-
-    Route::get('auth/google', 'Auth\AuthController@redirectToProvider');
-    Route::get('auth/google/callback', 'Auth\AuthController@handleProviderCallback');
-
+    Route::get('auth/{provider}', 'Auth\SocialAuthController@redirectToProvider');
+    Route::get('auth/{provider}/callback', 'Auth\SocialAuthController@handleProviderCallback');
     Route::get('csstransitions', function(){
         return view('tinkering.csstransitions');
     });
-
     Route::get('onesignal', function(){
         return view('notifications.onesignal');
     });
 });
+
+
