@@ -24,12 +24,10 @@ class CreateOauthIdentitiesTable extends Migration
      */
     public function __construct( )
     {
-        $this->authenticationProvidersTable = Config::get('adam-socialite.table');
+        $this->authenticationProvidersTable = Config::get('acacha-socialite.table');
     }
     /**
-     * Run the migrations.
-     *
-     * @return void
+     * Migration up
      */
     public function up()
     {
@@ -40,15 +38,13 @@ class CreateOauthIdentitiesTable extends Migration
             $table->string('provider');
             $table->string('access_token');
             $table->string('avatar');
-            $table->string('name')->nullable();
-            $table->string('nickname')->nullable();
+            $table->string('name')->nullable();;
+            $table->string('nickname')->nullable();;
             $table->timestamps();
         });
     }
     /**
-     * Reverse the migrations.
-     *
-     * @return void
+     * Migration down
      */
     public function down()
     {

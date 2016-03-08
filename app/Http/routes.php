@@ -32,6 +32,14 @@ Route::group(['middleware' => ['web']], function () {
     Route::get('onesignal', function(){
         return view('notifications.onesignal');
     });
+
+    Route::get('plans', 'PlansController@index');
+
+    Route::get('register_subscription', function(){
+        return view('auth.register_subscription');
+    });
+
+    Route::post('subscription_payment', 'SubscribeController@subscribe');
 });
 
 
