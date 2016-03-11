@@ -9,7 +9,7 @@ Landing page based on Pratt: http://blacktie.co/demo/pratt/
     <meta name="description" content="Pratt - Free Bootstrap 3 Theme">
     <meta name="author" content="Alvarez.is - BlackTie.co">
 
-    <title>Acacha AdminLTE Laravel package template Landing page - Using Pratt</title>
+    <title>New TODO Android Application</title>
 
     <!-- Bootstrap core CSS -->
     <link href="{{ asset('/css/bootstrap.css') }}" rel="stylesheet">
@@ -37,13 +37,13 @@ Landing page based on Pratt: http://blacktie.co/demo/pratt/
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="#"><b>adminlte-laravel</b></a>
+            <a class="navbar-brand" href="#"><b>TODOS German</b></a>
         </div>
         <div class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
                 <li class="active"><a href="#home" class="smothscroll">Home</a></li>
-                <li><a href="#desc" class="smothscroll">Description</a></li>
-                <li><a href="#showcase" class="smothScroll">Showcase</a></li>
+                <li><a href="#desc" class="smothscroll">Product</a></li>
+                <li><a href="#showcase" class="smothScroll">Price</a></li>
                 <li><a href="#contact" class="smothScroll">Contact</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
@@ -64,25 +64,23 @@ Landing page based on Pratt: http://blacktie.co/demo/pratt/
     <div class="container">
         <div class="row centered">
             <div class="col-lg-12">
-                <h1>Acacha <b><a href="https://github.com/acacha/adminlte-laravel">adminlte-laravel</a></b></h1>
-                <h3>A <a href="https://laravel.com/">Laravel</a> 5 package that switchs default Laravel
-                    scaffolding/boilerplate to <a href="https://almsaeedstudio.com/preview">AdminLTE</a> template with
-                    <a href="http://getbootstrap.com/">Bootstrap</a> 3.0 and <a href="http://blacktie.co/demo/pratt/">Pratt</a> Landing page</h3>
+                <h1>New <b><a href="https://play.google.com/store/apps/details?id=com.ggalia84.ggalia84.todos">TODOS German</a></b></h1>
+                <h3>A <a href="https://laravel.com/">Android</a> TODO list for all of your thinks!</h3>
                 <h3><a href="{{ url('/plans') }}" class="btn btn-lg btn-success">Get Started!</a></h3>
             </div>
             <div class="col-lg-2">
-                <h5>Amazing admin template</h5>
-                <p>Based on adminlte bootstrap theme</p>
+                <h5>Amazing TODOS list.</h5>
+                <p>Based on Material Design</p>
                 <img class="hidden-xs hidden-sm hidden-md" src="{{ asset('/img/arrow1.png') }}">
             </div>
             <div class="col-lg-8">
-                <img class="img-responsive" src="{{ asset('/img/app-bg.png') }}" alt="">
+                <img class="img-responsive" src="{{ asset('/img/app-todos.png') }}" alt="">
             </div>
             <div class="col-lg-2">
                 <br>
                 <img class="hidden-xs hidden-sm hidden-md" src="{{ asset('/img/arrow2.png') }}">
                 <h5>Awesome packaged...</h5>
-                <p>... by <a href="http://acacha.org/sergitur">Sergi Tur Badenas</a> at <a href="http://acacha.org">acacha.org</a> ready to use with Laravel!</p>
+                <p>... by <a href="https://github.com/Germangalia">German Galià</a> is ready to use with Google Play!</p>
             </div>
         </div>
     </div> <!--/ .container -->
@@ -94,23 +92,23 @@ Landing page based on Pratt: http://blacktie.co/demo/pratt/
 <div id="intro">
     <div class="container">
         <div class="row centered">
-            <h1>Designed To Excel</h1>
+            <h1>Designed To Android</h1>
             <br>
             <br>
             <div class="col-lg-4">
                 <img src="{{ asset('/img/intro01.png') }}" alt="">
                 <h3>Community</h3>
-                <p>See <a href="https://github.com/acacha/adminlte-laravel">Github project</a>, post <a href="https://github.com/acacha/adminlte-laravel/issues">issues</a> and <a href="https://github.com/acacha/adminlte-laravel/pulls">Pull requests</a></p>
+                <p>See <a href="https://github.com/Germangalia/TodosAndroid">Github project</a>, post <a href="https://github.com/Germangalia/TodosAndroid/issues">issues</a> and <a href="https://github.com/Germangalia/TodosAndroid/pulls">pull requests</a></p>
             </div>
             <div class="col-lg-4">
-                <img src="{{ asset('/img/intro02.png') }}" alt="">
-                <h3>Schedule</h3>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                <img src="{{ asset('/img/todos-icono.png') }}" alt="">
+                <h3>TODOS List</h3>
+                <p>The Amazing TODOS List for all your thinks.</p>
             </div>
             <div class="col-lg-4">
-                <img src="{{ asset('/img/intro03.png') }}" alt="">
-                <h3>Monitoring</h3>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                <img src="{{ asset('/img/todos-save.png') }}" alt="">
+                <h3>Advanced Save</h3>
+                <p>Keep all your thinks in the cloud.</p>
             </div>
         </div>
         <br>
@@ -126,7 +124,7 @@ Landing page based on Pratt: http://blacktie.co/demo/pratt/
             <br>
             <br>
             <div class="col-lg-6 centered">
-                <img class="centered" src="{{ asset('/img/mobile.png') }}" alt="">
+                <img class="centered" src="{{ asset('/img/todos-full.png') }}" alt="">
             </div>
 
             <div class="col-lg-6">
@@ -179,7 +177,7 @@ Landing page based on Pratt: http://blacktie.co/demo/pratt/
                     <div class="accordion-group">
                         <div class="accordion-heading">
                             <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseFour">
-                                Responsive Design
+                                Material Design
                             </a>
                         </div>
                         <div id="collapseFour" class="accordion-body collapse">
@@ -213,10 +211,10 @@ Landing page based on Pratt: http://blacktie.co/demo/pratt/
                     <!-- Wrapper for slides -->
                     <div class="carousel-inner">
                         <div class="item active">
-                            <img src="{{ asset('/img/item-01.png') }}" alt="">
+                            <img src="{{ asset('/img/todos-list.png') }}" alt="">
                         </div>
                         <div class="item">
-                            <img src="{{ asset('/img/item-02.png') }}" alt="">
+                            <img src="{{ asset('/img/todos-add.png') }}" alt="">
                         </div>
                     </div>
                 </div>
@@ -235,10 +233,10 @@ Landing page based on Pratt: http://blacktie.co/demo/pratt/
         <div class="col-lg-5">
             <h3>Address</h3>
             <p>
-                Av. Greenville 987,<br/>
-                New York,<br/>
+                Av. Constitució 987,<br/>
+                Ulldecona,<br/>
                 90873<br/>
-                United States
+                Spain
             </p>
         </div>
 
@@ -267,12 +265,9 @@ Landing page based on Pratt: http://blacktie.co/demo/pratt/
 <div id="c">
     <div class="container">
         <p>
-            <a href="https://github.com/acacha/adminlte-laravel"></a><b>admin-lte-laravel</b></a>. A Laravel 5 package that switchs default Laravel scaffolding/boilerplate to AdminLTE template.<br/>
-            <strong>Copyright &copy; 2015 <a href="http://acacha.org">Acacha.org</a>.</strong> Created by <a href="http://acacha.org/sergitur">Sergi Tur Badenas</a>. See code at <a href="https://github.com/acacha/adminlte-laravel">Github</a>
-            <br/>
-            AdminLTE created by Abdullah Almsaeed <a href="https://almsaeedstudio.com/">almsaeedstudio.com</a>
-            <br/>
-            Pratt Landing Page Created by <a href="http://www.blacktie.co">BLACKTIE.CO</a>
+            <a href="https://play.google.com/store/apps/details?id=com.ggalia84.ggalia84.todos"></a><b>TODOS GERMAN</b></a>.<br/>
+            <strong>Copyright &copy; 2015 .</strong> Created by <a href="https://github.com/Germangalia">German Galià</a>. See code at <a href="https://github.com/Germangalia/TodosAndroid">Github</a>
+
         </p>
 
     </div>
