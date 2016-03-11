@@ -1,6 +1,7 @@
 <?php
 namespace App\Http\Controllers\Auth;
 use App\User;
+use Auth;
 use Exception;
 use Laravel\Socialite\Facades\Socialite;
 use Redirect;
@@ -8,6 +9,8 @@ use Validator;
 use App\Http\Controllers\Controller;
 use Illuminate\Foundation\Auth\ThrottlesLogins;
 use Illuminate\Foundation\Auth\AuthenticatesAndRegistersUsers;
+use Illuminate\Http\Request;
+
 class AuthController extends Controller
 {
     /*
@@ -63,5 +66,55 @@ class AuthController extends Controller
             'email' => $data['email'],
             'password' => bcrypt($data['password']),
         ]);
+    }
+//    public function redirectToAuthenticationServiceProvider($provider,Socialite $socialite) {
+//        return $this->app->make('socialite')->driver($provider)->redirect();
+//        return Socialite::driver($provider)->redirect();
+//        //return $socialite->redirect();
+//    }
+//    public function handleAuthenticationServiceProviderCallback($provider) {
+//        try {
+//            $user = Socialite::driver($provider)->user();
+//        } catch (Exception $e) {
+//            return Redirect::to('auth/' . $provider);
+//        }
+//        dd($user);
+//
+//        try {
+//            SocialAuth::login('github');
+//        } catch (ApplicationRejectedException $e) {
+//            // User rejected application
+//        } catch (InvalidAuthorizationCodeException $e) {
+//            // Authorization was attempted with invalid
+//            // code,likely forgery attempt
+//        }
+//
+//        return Redirect::intended();
+//
+//        //dd($user);
+//
+////        $authUser = User::firstOrCreate(get_object_vars ( $user ) );
+//
+////        Auth::login($authUser, true);
+//
+////        return Redirect::to('home');
+//    }
+    protected function subscribeToStripe($creditCardToken, User $user)
+    {
+        $user->newSubscription('starter', 'starter')
+            ->create($creditCardToken);
+    }
+    protected function registerAndSubscribeToStripe(Request $request) {
+        $validator = $this->validator($request->all());
+        if ($validator->fails()) {
+            $this->throwValidationException(
+                $request, $validator
+            );
+        }
+        Auth::guard($this->getGuard())->login($this->create($request->all()));
+        $creditCardToken = $request->input('stripeToken');
+        $user = Auth::user();
+        $this->subscribeToStripe($creditCardToken,$user);
+        return redirect($this->redirectPath());
     }
 }

@@ -1,6 +1,7 @@
 <div class="register-box-body">
     <p class="login-box-msg">Register a new membership</p>
-    <form action="{{ url('/register') }}" method="post">
+
+    <form action="{{ url($url) }}" method="post" id="register_form">
         <input type="hidden" name="_token" value="{{ csrf_token() }}">
         <div class="form-group has-feedback">
             <input type="text" class="form-control" placeholder="Full name" name="name" value="{{ old('name') }}"/>
@@ -34,8 +35,7 @@
 
     <div class="social-auth-links text-center">
         <p>- OR -</p>
-        <a href="#" class="btn btn-block btn-social btn-facebook btn-flat"><i class="fa fa-facebook"></i> Sign up using Facebook</a>
-        <a href="#" class="btn btn-block btn-social btn-google btn-flat"><i class="fa fa-google-plus"></i> Sign up using Google+</a>
+        @include('auth.partials.social_login')
     </div>
 
     <a href="{{ url('/login') }}" class="text-center">I already have a membership</a>

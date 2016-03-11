@@ -50,7 +50,9 @@
 
             <div class="social-auth-links text-center">
                 <p>- OR -</p>
+
                 @include('auth.partials.social_login')
+
             </div><!-- /.social-auth-links -->
 
             <a href="{{ url('/password/reset') }}">I forgot my password</a><br>
