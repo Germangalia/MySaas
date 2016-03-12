@@ -31,7 +31,7 @@ p {
 
 /* Links */
 a {
-    color: #3bc492;
+    color: orangered;
     word-wrap: break-word;
 
     -webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
@@ -43,7 +43,7 @@ a {
 
 a:hover,
 a:focus {
-    color: #c0392b;
+    color: orange;
     text-decoration: none;
     outline: 0;
 }
@@ -72,7 +72,7 @@ a:after {
    ========================================================================== */
 
 #headerwrap {
-	background-color: #34495e;
+	background-color: purple;
 	padding-top: 60px;
 }
 
@@ -104,11 +104,13 @@ a:after {
 #intro {
 	padding-top: 50px;
 	border-top: #bdc3c7 solid 5px;
+    background-color: white;
 }
 
 #features {
 	padding-top: 50px;
 	padding-bottom: 50px;
+    background-color: gold;
 }
 
 #features .ac a{
@@ -119,7 +121,7 @@ a:after {
 
 #showcase {
 	display: block;
-	background-color: #34495e;
+	background-color: darkseagreen;
 	padding-top: 50px;
 	padding-bottom: 50px;
 }
@@ -129,7 +131,7 @@ a:after {
 }
 
 #footerwrap {
-	background-color: #2f2f2f;
+	background-color: orangered;
 	color: white;
 	padding-top: 40px;
 	padding-bottom: 60px;

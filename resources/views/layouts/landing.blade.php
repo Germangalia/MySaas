@@ -65,7 +65,7 @@ Landing page based on Pratt: http://blacktie.co/demo/pratt/
         <div class="row centered">
             <div class="col-lg-12">
                 <h1>New <b><a href="https://play.google.com/store/apps/details?id=com.ggalia84.ggalia84.todos">TODOS German</a></b></h1>
-                <h3>A <a href="https://laravel.com/">Android</a> TODO list for all of your thinks!</h3>
+                <h3>A <a href="https://www.android.com/intl/es_es//">Android</a> TODO list for all of your thinks!</h3>
                 <h3><a href="{{ url('/plans') }}" class="btn btn-lg btn-success">Get Started!</a></h3>
             </div>
             <div class="col-lg-2">

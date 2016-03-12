@@ -23,6 +23,7 @@
 @teal: #39CCCC;
 @olive: #3D9970;
 @lime: #01FF70;
+@orange-dark: #FF5733;
 @orange: #FF851B;
 @fuchsia: #F012BE;
 @purple: #605ca8;
@@ -45,28 +46,28 @@
 @link-hover-color: lighten(@link-color, 15%);
 
 //Body background (Affects main content background only)
-@body-bg: #ecf0f5;
+@body-bg: @orange-dark;
 
 //SIDEBAR SKINS
 //--------------------------------------------------------
 
 //Dark sidebar
-@sidebar-dark-bg: #222d32;
+@sidebar-dark-bg: @orange-dark;
 @sidebar-dark-hover-bg: darken(@sidebar-dark-bg, 2%);
 @sidebar-dark-color: lighten(@sidebar-dark-bg, 60%);
-@sidebar-dark-hover-color: #fff;
+@sidebar-dark-hover-color: @orange;
 @sidebar-dark-submenu-bg: lighten(@sidebar-dark-bg, 5%);
 @sidebar-dark-submenu-color: lighten(@sidebar-dark-submenu-bg, 40%);
-@sidebar-dark-submenu-hover-color: #fff;
+@sidebar-dark-submenu-hover-color: @orange;
 
 //Light sidebar
-@sidebar-light-bg: #f9fafc;
-@sidebar-light-hover-bg: lighten(#f0f0f1, 1.5%);
-@sidebar-light-color: #444;
-@sidebar-light-hover-color: #000;
+@sidebar-light-bg: @orange-dark;
+@sidebar-light-hover-bg: lighten(@sidebar-light-bg, 1.5%);
+@sidebar-light-color: @orange;
+@sidebar-light-hover-color: @sidebar-light-bg;
 @sidebar-light-submenu-bg: @sidebar-light-hover-bg;
-@sidebar-light-submenu-color: #777;
-@sidebar-light-submenu-hover-color: #000;
+@sidebar-light-submenu-color: @orange;
+@sidebar-light-submenu-hover-color: @sidebar-light-bg;
 
 //CONTROL SIDEBAR
 //--------------------------------------------------------
@@ -81,7 +82,7 @@
 @box-padding: 10px;
 
 //Box variants
-@box-default-border-top-color: #d2d6de;
+@box-default-border-top-color: @orange-dark;
 
 //BUTTONS
 //--------------------------------------------------------
@@ -107,17 +108,17 @@
 //--------------------------------------------------------
 @direct-chat-height: 250px;
 @direct-chat-default-msg-bg: @gray;
-@direct-chat-default-font-color: #444;
+@direct-chat-default-font-color: @orange;
 @direct-chat-default-msg-border-color: @gray;
 
 //CHAT WIDGET
 //--------------------------------------------------------
-@attachment-border-radius: 3px;
+@attachment-border-radius: 4px;
 
 //TRANSITIONS SETTINGS
 //--------------------------------------------------------
 
 //Transition global options
-@transition-speed: .3s;
+@transition-speed: .4s;
 @transition-fn: cubic-bezier(0.32,1.25,0.375,1.15);
 //cubic-bezier(0.32,1.25,0.375,1.15);
