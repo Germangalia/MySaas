@@ -21,9 +21,9 @@ class AcachaAdminLTELaravelTest extends TestCase
     public function testLandingPage()
     {
         $this->visit('/')
-             ->see('Acacha')
-             ->see('adminlte-laravel')
-             ->see('Pratt');
+             ->see('German')
+             ->see('TODOS')
+             ->see('GitHub');
     }
 
     /**
@@ -37,9 +37,9 @@ class AcachaAdminLTELaravelTest extends TestCase
 
         $this->actingAs($user)
             ->visit('/')
-            ->see('Acacha')
-            ->see('adminlte-laravel')
-            ->see('Pratt')
+            ->see('German')
+            ->see('TODOS')
+            ->see('GitHub')
             ->see($user->name);
     }
 

@@ -26,5 +26,16 @@ class Kernel extends ConsoleKernel
     {
         // $schedule->command('inspire')
         //          ->hourly();
+
+        $schedule->call(function(){
+
+            $results = DB::table('sale_reports_dailies')->select('','total')->get();
+            $suma = 0;
+
+            foreach($results as $result){
+                $suma = $suma + $results;
+            }
+
+        })->dailyAt('23:59');
     }
 }
