@@ -1,7 +1,5 @@
 <?php
-
 use Illuminate\Database\Seeder;
-
 class UsersTableSeeder extends Seeder
 {
     /**
@@ -11,13 +9,12 @@ class UsersTableSeeder extends Seeder
      */
     public function run()
     {
-        factory(\App\User::Class, 1000)->create()->each(
+        factory(\App\User::class, 100)->create()->each(
             function($user) {
                 $user->subscriptions()->save(
-                    factory(\Laravel\Cashier\Subscription::class, 1)->make());
+                    factory(\Laravel\Cashier\Subscription::class, 1)->make()
+                );
             }
         );
-
-
     }
 }

@@ -1,7 +1,5 @@
 <?php
-
 use Illuminate\Database\Seeder;
-
 class SaleReportsDailyTableSeeder extends Seeder
 {
     /**
@@ -12,22 +10,18 @@ class SaleReportsDailyTableSeeder extends Seeder
     public function run()
     {
         $subscriptions = \Laravel\Cashier\Subscription::all();
-
         $totals = array();
-
         foreach ($subscriptions as $subscription) {
-            $day = $subscription->create_at->format('Y-m-d');
-            $quantity =$subscription->quantity;
-            if(array_key_exists($day, $totals)){
+            $day = $subscription->created_at->format('Y-m-d');
+            $quantity = $subscription->quantity;
+            if (array_key_exists($day,$totals)) {
                 $totals[$day] = $totals[$day] + $quantity;
-            } else{
+            } else {
                 $totals[$day] = $quantity;
             }
         }
-
-        foreach ($totals as $day => $total){
+        foreach ($totals as $day => $total) {
             $rd = new \App\SaleReportsDaily();
-
             $rd->day = $day;
             $rd->total = $total;
             $rd->save();

@@ -42,6 +42,8 @@ Route::group(['middleware' => ['web']], function () {
     Route::post('registerAndSubscribeToStripe', 'Auth\AuthController@registerAndSubscribeToStripe');
 
     //Route::post('subscription_payment', 'SubscribeController@subscribe');
+
+    Route::get('reports/dailysales', 'ReportController@dailySales');
 });
 
 

@@ -27,6 +27,7 @@ class Cashier extends Migration
             $table->integer('quantity');
             $table->timestamp('trial_ends_at')->nullable();
             $table->timestamp('ends_at')->nullable();
+            $table->timestamp('create_at');
             $table->timestamps();
         });
     }
