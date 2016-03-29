@@ -70,7 +70,13 @@
                     </div>
                     <div class="box-body">
                         <div class="chart">
-                            <graph></graph>
+                            <graph  :labels='{!! json_encode($days) !!}'
+                                    :values='{!! json_encode($totals) !!}' ></graph>
+                            <graph  :labels="['day20','day21','day22','day23']"
+                                    :values="[256,134,123,120]" ></graph>
+                            <graph  :labels="['dayprova','dayprova','day32','day33']"
+                                    :values="[36,14,12,10]"
+                                    color="blue"></graph>
                         </div>
                     </div>
                     <!-- /.box-body -->

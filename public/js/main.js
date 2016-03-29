@@ -13407,23 +13407,28 @@ var _chart2 = _interopRequireDefault(_chart);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 exports.default = {
-    template: '<canvas id="barChartDailySales" style="height: 226px; width: 494px;" width="617" height="282"></canvas>',
+    template: '<canvas style="height: 226px; width: 494px;" width="617" height="282"></canvas>',
+
+    props: {
+        labels: {},
+        values: {},
+        color: {
+            default: 'rgba(120,220,220,0.5)'
+        }
+    },
 
     ready: function ready() {
-        //alert("Hola soc Graph");
-
-        var ctx = document.getElementById("barChartDailySales").getContext("2d");
+        //alert("Hola soc Graph!");
+        var ctx = this.$el.getContext("2d");
         var data = {
-            labels: ["day1", "day2", "day3"],
+            labels: this.labels,
             datasets: [{
-                data: [25, 26, 30],
+                data: this.values,
                 label: "Daily Sales",
-                fillColor: "rgba(220,220,220,0, 5)",
-                strokeColor: "rgba(220,220,220,1)",
-                pointColor: "rgba(220,220,220,1)",
-                pointStrokeColor: "#fff",
-                pointHighlightFill: "#fff",
-                pointHighlightStroke: "rgba(220,220,220,1)"
+                fillColor: this.color,
+                strokeColor: "rgba(220,220,220,0.8)",
+                highlightFill: "rgba(220,220,220,0.75)",
+                highlightStroke: "rgba(220,220,220,1)"
             }]
         };
         var myBarChart = new _chart2.default(ctx).Bar(data);
