@@ -11,20 +11,20 @@ class SaleReportsDailyTableSeeder extends Seeder
     {
         $subscriptions = \Laravel\Cashier\Subscription::all();
         $totals = array();
-        foreach ($subscriptions as $subscription) {
-            $day = $subscription->created_at->format('Y-m-d');
+        foreach ($subscriptions as $index => $subscription) {
+            $day = $subscription->created_at->format('Y-m-D');
             $quantity = $subscription->quantity;
-            if (array_key_exists($day,$totals)) {
+            if(array_key_exists($day, $totals)){
                 $totals[$day] = $totals[$day] + $quantity;
             } else {
                 $totals[$day] = $quantity;
             }
         }
         foreach ($totals as $day => $total) {
-            $rd = new \App\SaleReportsDaily();
-            $rd->day = $day;
-            $rd->total = $total;
-            $rd->save();
+            $repdaily = new \App\SaleReportsDaily();
+            $repdaily->day = $day;
+            $repdaily->total = $total;
+            $repdaily->save();
         }
     }
 }

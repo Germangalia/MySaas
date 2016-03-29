@@ -6,30 +6,9 @@
 
 @section('custom_scripts')
     <script src="https://cdn.datatables.net/1.10.11/js/jquery.dataTables.min.js" type="text/javascript"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/1.0.2/Chart.js"></script>
 
-    <script type="text/javascript">
-        $(document).ready(function() {
-            $('#dailySales').dataTable();
-        } );
-        var ctx = document.getElementById("barChartDailySales").getContext("2d");
-        var data = {
-            labels: {!! json_encode($days) !!},
-            datasets: [ {
-                data: {!! json_encode($totals) !!},
-                label: "Daily Sales",
-                fillColor: "rgba(220,220,220,0.5)",
-                strokeColor: "rgba(220,220,220,0.8)",
-                highlightFill: "rgba(220,220,220,0.75)",
-                highlightStroke: "rgba(220,220,220,1)"
-            }
-            ]
-        }
-        var myBarChart = new Chart(ctx).Bar(data);
-    </script>
+
 @endsection
-
-{{ json_encode($days) }} || {{ json_encode($totals) }}
 
 @section('custom_css')
     <link href="https://cdn.datatables.net/1.10.11/css/jquery.dataTables.min.css" rel="stylesheet" type="text/css">
@@ -91,7 +70,7 @@
                     </div>
                     <div class="box-body">
                         <div class="chart">
-                            <canvas id="barChartDailySales" style="height: 226px; width: 494px;" width="617" height="282"></canvas>
+                            <graph></graph>
                         </div>
                     </div>
                     <!-- /.box-body -->
