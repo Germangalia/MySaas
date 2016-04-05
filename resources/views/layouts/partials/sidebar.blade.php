@@ -41,7 +41,8 @@
                 <a href="#"><i class='fa fa-link'></i> <span>Reports</span> <i class="fa fa-angle-left pull-right"></i></a>
                 <ul class="treeview-menu">
                     <li><a href="{{url('reports/dailysales')}}">Informe de ventas</a></li>
-                    <li><a href="{{url('reports/downloadInvoice')}}">PDF</a></li>
+                    <li><a href="{{url('reports/downloadInvoice')}}">DomPDF</a></li>
+                    <li><a href="{{url('reports/createInvoice')}}">JsPDF</a></li>
                     <li><a href="#">Link in level 2</a></li>
                 </ul>
             </li>
