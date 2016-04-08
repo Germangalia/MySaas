@@ -6,10 +6,27 @@
 
 @section('custom_scripts')
     <!-- jsPDF -->
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.2.61/jspdf.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.0.272/jspdf.min.js"></script>
 
     <script>
+
         var logo;
+        // Image selector
+        image = $('#invoice-image');
+        img_data = {};
+        // Image selector listener
+        image.change(function() {
+            var user_file = image[0].files[0];
+            img_data = {
+                type: user_file.type === 'image/jpeg' ? 'JPEG' : 'PNG'
+            };
+            var reader = new FileReader();
+            reader.onload = function(event) {
+                img_data.src = event.target.result;
+                preview();
+            };
+            reader.readAsDataURL(user_file);
+        });
         function createPDF(){
             this.pdf = new jsPDF('p', 'mm', 'a4');
             this.title = document.getElementById('invoice-title').value;
@@ -21,11 +38,15 @@
             this.priceColor = document.getElementById('invoice-price-color').value;
             this.separator = "++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++";
             this.titleSeparation = 12;
-            if (logo != null){
-                pdf.addImage(logo, 'JPG', 10, 5, 80, 60);
-                this.titleSeparation = 90;
+            if (img_data.src != null) {
+                pdf.addImage(img_data.src, img_data.type, 10, 5, 20, 20);
+                this.titleSeparation = 50;
             }
-
+//            if (logo != null){
+//                pdf.addImage(logo, 'JPG', 10, 5, 80, 60);
+//                this.titleSeparation = 90;
+//            }
+            this.titleSeparation = 20;
             pdf.setFontSize(titleSize);
             pdf.setTextColor(titleColor);
             this.titleWidth = pdf.getStringUnitWidth(title) * titleSize / pdf.internal.scaleFactor;
@@ -54,15 +75,15 @@
             this.string = pdf.output('datauristring');
             $('#pdf_preview').attr('src', string);
         }
-        function getBase64() {
-            this.logo = null;
-            var FR= new FileReader();
-            FR.onload = function(e) {
-                this.logo = e.target.result;
-            };
-            FR.readAsDataURL(this.files[0]);
-        }
-        document.getElementById('invoice-image').addEventListener("change", getBase64, false);
+//        function getBase64() {
+//            this.logo = null;
+//            var FR= new FileReader();
+//            FR.onload = function(e) {
+//                this.logo = e.target.result;
+//            };
+//            FR.readAsDataURL(this.files[0]);
+//        }
+//        document.getElementById('invoice-image').addEventListener("change", getBase64, false);
     </script>
 
 
