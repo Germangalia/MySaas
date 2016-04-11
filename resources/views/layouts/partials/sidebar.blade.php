@@ -37,6 +37,7 @@
             <li><a href="{{url('/csstransitions')}}"><i class='fa fa-link'></i> <span>CSS Transitions</span></a></li>
             <li><a href="{{url('onesignal')}}"><i class='fa fa-link'></i> <span>Send OneSignal Notification</span></a></li>
             <li><a href="{{url('reports')}}"><i class='fa fa-link'></i> <span>Pricing Table</span></a></li>
+            <li><a href="{{url('users')}}"><i class='fa fa-link'></i> <span>Usuaris</span></a></li>
             <li class="treeview">
                 <a href="#"><i class='fa fa-link'></i> <span>Reports</span> <i class="fa fa-angle-left pull-right"></i></a>
                 <ul class="treeview-menu">

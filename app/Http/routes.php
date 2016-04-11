@@ -24,6 +24,7 @@ Route::get('/', function () {
 */
 Route::group(['middleware' => ['web']], function () {
     //
+    Route::get('users', 'UsersController@index');
     Route::get('reports/createInvoice', 'JsPDFController@createInvoice');
     Route::get('reports/downloadInvoice', 'PDFController@downloadInvoice');
     Route::get('invoiceHtml','PDFController@invoiceHtml');
