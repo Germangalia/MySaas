@@ -24,7 +24,15 @@ Route::get('/', function () {
 */
 Route::group(['middleware' => ['web']], function () {
     //
+    Event::listen('user.change', function(){
+        Cache::forget('query.users');
+    });
+
     Route::get('users', 'UsersController@index');
+    Route::post('users', 'UsersController@store');
+    Route::put('users', 'UsersController@update');
+    Route::delete('users', 'UsersController@destroy');
+
     Route::get('reports/createInvoice', 'JsPDFController@createInvoice');
     Route::get('reports/downloadInvoice', 'PDFController@downloadInvoice');
     Route::get('invoiceHtml','PDFController@invoiceHtml');
