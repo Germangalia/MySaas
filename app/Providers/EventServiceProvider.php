@@ -16,6 +16,12 @@ class EventServiceProvider extends ServiceProvider
         'App\Events\SomeEvent' => [
             'App\Listeners\EventListener',
         ],
+        \App\Events\UserLogged::class => [
+            \App\Listeners\UserUpdateLastLogin::class,
+        ],
+        \App\Events\UserHsaChanged::class => [
+            \App\Listeners\UserCacheForget::class,
+        ],
     ];
 
     /**

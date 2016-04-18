@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\User;
+use Event;
 use Illuminate\Http\Request;
 
 use App\Http\Requests;
@@ -35,7 +36,8 @@ class UsersController extends Controller
 
 //        Cache::flush();
 //        Cache::forget('query.users');
-        Event::fire('user.change');
+        //Event::fire('user.change');
+        $this->UserHasChanged();
 
     }
 
@@ -47,7 +49,8 @@ class UsersController extends Controller
 
 //        Cache::flush();
 //        Cache::forget('query.users');
-        Event::fire('user.change');
+//        Event::fire(new UserHasChanged());
+        $this->UserHasChanged();
     }
 
     public function destroy($id)
@@ -56,6 +59,13 @@ class UsersController extends Controller
 
 //        Cache::flush();
 //        Cache::forget('query.users');
-        Event::fire('user.change');
+//        Event::fire('user.change');
+//        Event::fire(new UserHasChanged());
+        $this->UserHasChanged();
+    }
+
+    public function UserHasChanged()
+    {
+        Event::fire(new UserHasChanged());
     }
 }
