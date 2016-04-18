@@ -2,9 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3ffe46a6-566a-47b0-b1de-e3fb0fda7011" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/AbstractProfiler.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/CreadorDePerfilesHTML.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/CreadorDePerfilesJson.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Profile.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/UsersController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/UsersController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Providers/EventServiceProvider.php" afterPath="$PROJECT_DIR$/app/Providers/EventServiceProvider.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/routes.php" afterPath="$PROJECT_DIR$/app/Http/routes.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/User.php" afterPath="$PROJECT_DIR$/app/User.php" />
     </list>
     <ignored path="MySaas.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -39,106 +43,81 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="createinvoice.blade.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/createinvoice.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-120.625">
-              <caret line="193" column="7" selection-start-line="193" selection-start-column="7" selection-end-line="193" selection-end-column="7" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="routes.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Http/routes.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-14.583333">
-              <caret line="33" column="54" selection-start-line="33" selection-start-column="54" selection-end-line="33" selection-end-column="54" />
+            <state vertical-scroll-proportion="-16.458334">
+              <caret line="36" column="0" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UsersController.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/UsersController.php">
+      <file leaf-file-name="ProfileController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/ProfileController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-13.958333">
-              <caret line="51" column="44" selection-start-line="51" selection-start-column="44" selection-end-line="51" selection-end-column="44" />
+            <state vertical-scroll-proportion="-13.75">
+              <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
               <folding>
-                <element signature="e#40#53#0#PHP" expanded="true" />
+                <element signature="e#40#70#0#PHP" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="JsPDFController.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/JsPDFController.php">
+      <file leaf-file-name="Profile.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Profile.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-8.125">
-              <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+            <state vertical-scroll-proportion="-5.625">
+              <caret line="14" column="1" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UserLogged.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Events/UserLogged.php">
+      <file leaf-file-name="User.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/User.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-11.875">
-              <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="EventServiceProvider.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Providers/EventServiceProvider.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-21.875">
-              <caret line="35" column="0" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
+            <state vertical-scroll-proportion="-22.5">
+              <caret line="38" column="0" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
               <folding>
-                <element signature="e#33#98#0#PHP" expanded="true" />
+                <marker date="1460992341373" expanded="true" signature="572:691" placeholder="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UserUpdateLastLogin.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/Listeners/UserUpdateLastLogin.php">
+      <file leaf-file-name="CreadorDePerfilesHTML.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/CreadorDePerfilesHTML.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5586207">
-              <caret line="29" column="5" selection-start-line="26" selection-start-column="3" selection-end-line="29" selection-end-column="5" />
+            <state vertical-scroll-proportion="-10.625">
+              <caret line="22" column="1" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="1" />
+              <folding>
+                <marker date="1460993716322" expanded="true" signature="221:246" placeholder="..." />
+                <marker date="1460993716322" expanded="true" signature="221:347" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AbstractProfiler.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/AbstractProfiler.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.28965518">
+              <caret line="19" column="1" selection-start-line="19" selection-start-column="1" selection-end-line="19" selection-end-column="1" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UserCacheForget.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Listeners/UserCacheForget.php">
+      <file leaf-file-name="CreadorDePerfilesJson.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/CreadorDePerfilesJson.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-13.125">
-              <caret line="23" column="37" selection-start-line="23" selection-start-column="37" selection-end-line="23" selection-end-column="37" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="sidebar.blade.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/layouts/partials/sidebar.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="48" column="17" selection-start-line="48" selection-start-column="17" selection-end-line="48" selection-end-column="17" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="scripts.blade.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/layouts/partials/scripts.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="3" column="74" selection-start-line="2" selection-start-column="0" selection-end-line="3" selection-end-column="74" />
-              <folding />
+            <state vertical-scroll-proportion="-3.75">
+              <caret line="11" column="28" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="28" />
+              <folding>
+                <marker date="1460993716314" expanded="true" signature="221:349" placeholder="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -159,13 +138,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/resources/assets/less/admin-lte/login_and_register.less" />
-        <option value="$PROJECT_DIR$/resources/assets/less/admin-lte/variables.less" />
-        <option value="$PROJECT_DIR$/resources/assets/less/admin-lte/alerts.less" />
-        <option value="$PROJECT_DIR$/resources/assets/less/admin-lte/users-list.less" />
-        <option value="$PROJECT_DIR$/resources/assets/less/admin-lte/navs.less" />
-        <option value="$PROJECT_DIR$/resources/assets/less/admin-lte/select2.less" />
-        <option value="$PROJECT_DIR$/resources/assets/less/admin-lte/mixins.less" />
         <option value="$PROJECT_DIR$/resources/assets/less/admin-lte/skins/_all-skins.less" />
         <option value="$PROJECT_DIR$/vendor/acacha/admin-lte-template-laravel/resources/views/layouts/partials/htmlheader.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/layouts/app.blade.php" />
@@ -204,12 +176,19 @@
         <option value="$PROJECT_DIR$/resources/assets/css/jsPDFinvoice.css" />
         <option value="$PROJECT_DIR$/resources/views/createinvoice.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/layouts/partials/sidebar.blade.php" />
-        <option value="$PROJECT_DIR$/app/Http/routes.php" />
         <option value="$PROJECT_DIR$/app/Providers/EventServiceProvider.php" />
         <option value="$PROJECT_DIR$/app/Listeners/UserCacheForget.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/UsersController.php" />
         <option value="$PROJECT_DIR$/app/Events/UserLogged.php" />
         <option value="$PROJECT_DIR$/app/Listeners/UserUpdateLastLogin.php" />
+        <option value="$PROJECT_DIR$/app/CreadorDePerfiles.php" />
+        <option value="$PROJECT_DIR$/app/Http/routes.php" />
+        <option value="$PROJECT_DIR$/app/User.php" />
+        <option value="$PROJECT_DIR$/app/Profile.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/ProfileController.php" />
+        <option value="$PROJECT_DIR$/app/CreadorDePerfilesJson.php" />
+        <option value="$PROJECT_DIR$/app/CreadorDePerfilesHTML.php" />
+        <option value="$PROJECT_DIR$/app/AbstractProfiler.php" />
       </list>
     </option>
   </component>
@@ -643,7 +622,7 @@
   <component name="PropertiesComponent">
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Phaser/hellophaser" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="SearchEverywhereHistoryKey" value="event&#9;FILE&#9;file:///home/ggalia84/Code/laravels/MySaas/app/Providers/EventServiceProvider.php&#10;eventpro&#9;null&#9;null&#10;routes&#9;FILE&#9;file:///home/ggalia84/Code/laravels/MySaas/app/Http/routes.php&#10;rou&#9;FILE&#9;file:///home/ggalia84/Code/laravels/MySaas/app/Http/routes.php&#10;report&#9;null&#9;null&#10;html&#9;FILE&#9;file:///home/ggalia84/Code/laravels/MySaas/resources/views/layouts/partials/htmlheader.blade.php&#10;css&#9;FILE&#9;file:///home/ggalia84/Code/laravels/MySaas/public/css/main.css&#10;scripts&#9;FILE&#9;file:///home/ggalia84/Code/laravels/MySaas/resources/views/layouts/partials/scripts.blade.php&#10;repor&#9;null&#9;null&#10;side&#9;FILE&#9;file:///home/ggalia84/Code/laravels/MySaas/resources/views/layouts/partials/sidebar.blade.php&#10;showcase&#9;null&#9;null&#10;app&#9;FILE&#9;file:///home/ggalia84/Code/laravels/MySaas/bootstrap/app.php&#10;htmlhead&#9;FILE&#9;file:///home/ggalia84/Code/laravels/MySaas/vendor/acacha/admin-lte-template-laravel/resources/views/layouts/partials/htmlheader.blade.php&#10;dashboardPage&#9;null&#9;null&#10;register&#9;FILE&#9;file:///home/ggalia84/Code/laravels/MySaas/resources/views/auth/partials/register.blade.php&#10;login&#9;FILE&#9;file:///home/ggalia84/Code/laravels/MySaas/resources/views/auth/login.blade.php&#10;servi&#9;FILE&#9;file:///home/ggalia84/Code/laravels/MySaas/config/services.php&#10;varia&#9;FILE&#9;file:///home/ggalia84/Code/laravels/MySaas/resources/assets/less/admin-lte/variables.less&#10;sidebar&#9;FILE&#9;file:///home/ggalia84/Code/laravels/MySaas/resources/views/layouts/partials/sidebar.blade.php" />
+    <property name="SearchEverywhereHistoryKey" value="rou&#9;FILE&#9;file:///home/ggalia84/Code/laravels/MySaas/app/Http/routes.php&#10;user&#9;FILE&#9;file:///home/ggalia84/Code/laravels/MySaas/app/User.php&#10;event&#9;FILE&#9;file:///home/ggalia84/Code/laravels/MySaas/app/Providers/EventServiceProvider.php&#10;eventpro&#9;null&#9;null&#10;routes&#9;FILE&#9;file:///home/ggalia84/Code/laravels/MySaas/app/Http/routes.php&#10;report&#9;null&#9;null&#10;html&#9;FILE&#9;file:///home/ggalia84/Code/laravels/MySaas/resources/views/layouts/partials/htmlheader.blade.php&#10;css&#9;FILE&#9;file:///home/ggalia84/Code/laravels/MySaas/public/css/main.css&#10;scripts&#9;FILE&#9;file:///home/ggalia84/Code/laravels/MySaas/resources/views/layouts/partials/scripts.blade.php&#10;repor&#9;null&#9;null&#10;side&#9;FILE&#9;file:///home/ggalia84/Code/laravels/MySaas/resources/views/layouts/partials/sidebar.blade.php&#10;showcase&#9;null&#9;null&#10;app&#9;FILE&#9;file:///home/ggalia84/Code/laravels/MySaas/bootstrap/app.php&#10;htmlhead&#9;FILE&#9;file:///home/ggalia84/Code/laravels/MySaas/vendor/acacha/admin-lte-template-laravel/resources/views/layouts/partials/htmlheader.blade.php&#10;dashboardPage&#9;null&#9;null&#10;register&#9;FILE&#9;file:///home/ggalia84/Code/laravels/MySaas/resources/views/auth/partials/register.blade.php&#10;login&#9;FILE&#9;file:///home/ggalia84/Code/laravels/MySaas/resources/views/auth/login.blade.php&#10;servi&#9;FILE&#9;file:///home/ggalia84/Code/laravels/MySaas/config/services.php&#10;varia&#9;FILE&#9;file:///home/ggalia84/Code/laravels/MySaas/resources/assets/less/admin-lte/variables.less&#10;sidebar&#9;FILE&#9;file:///home/ggalia84/Code/laravels/MySaas/resources/views/layouts/partials/sidebar.blade.php" />
     <property name="js-jscs-nodeInterpreter" value="/usr/local/bin/node" />
     <property name="settings.editor.selected.configurable" value="Settings.JavaScript" />
     <property name="JavaScriptPreferStrict" value="false" />
@@ -761,41 +740,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/resources/views/layouts/app.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6275862">
-          <caret line="50" column="41" selection-start-line="50" selection-start-column="41" selection-end-line="50" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Kernel.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="3.75">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/46bc16c2-7dd5-443f-9735-b400e1e1f42c/console.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/layouts/landing.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-13.291667">
-          <caret line="39" column="48" selection-start-line="39" selection-start-column="48" selection-end-line="39" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/AcachaAdminLTELaravelTest.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-18.125">
-          <caret line="38" column="24" selection-start-line="38" selection-start-column="24" selection-end-line="38" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/ecc2723d-0043-4a83-bd88-d29af7709d1e/console.sql">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -821,13 +765,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/User.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.125">
-          <caret line="15" column="4" selection-start-line="15" selection-start-column="4" selection-end-line="17" selection-end-column="6" />
         </state>
       </provider>
     </entry>
@@ -1079,6 +1016,32 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/Listeners/UserUpdateLastLogin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-10.0">
+          <caret line="18" column="5" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Providers/EventServiceProvider.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7241379">
+          <caret line="35" column="0" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
+          <folding>
+            <element signature="e#33#98#0#PHP" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Events/UserLogged.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.39310345">
+          <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/JsPDFController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-8.125">
@@ -1087,18 +1050,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/routes.php">
+    <entry file="file://$PROJECT_DIR$/app/Listeners/UserCacheForget.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-14.583333">
-          <caret line="33" column="54" selection-start-line="33" selection-start-column="54" selection-end-line="33" selection-end-column="54" />
+        <state vertical-scroll-proportion="0.43448275">
+          <caret line="23" column="37" selection-start-line="23" selection-start-column="37" selection-end-line="23" selection-end-column="37" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Listeners/UserCacheForget.php">
+    <entry file="file://$PROJECT_DIR$/app/Http/routes.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-13.125">
-          <caret line="23" column="37" selection-start-line="23" selection-start-column="37" selection-end-line="23" selection-end-column="37" />
+        <state vertical-scroll-proportion="-16.458334">
+          <caret line="36" column="0" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1113,28 +1076,59 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Events/UserLogged.php">
+    <entry file="file://$PROJECT_DIR$/app/User.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-11.875">
-          <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Providers/EventServiceProvider.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-21.875">
-          <caret line="35" column="0" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
+        <state vertical-scroll-proportion="-22.5">
+          <caret line="38" column="0" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
           <folding>
-            <element signature="e#33#98#0#PHP" expanded="true" />
+            <marker date="1460992341373" expanded="true" signature="572:691" placeholder="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Listeners/UserUpdateLastLogin.php">
+    <entry file="file://$PROJECT_DIR$/app/CreadorDePerfilesJson.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5586207">
-          <caret line="29" column="5" selection-start-line="26" selection-start-column="3" selection-end-line="29" selection-end-column="5" />
+        <state vertical-scroll-proportion="-3.75">
+          <caret line="11" column="28" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="28" />
+          <folding>
+            <marker date="1460993716314" expanded="true" signature="221:349" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/CreadorDePerfilesHTML.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-10.625">
+          <caret line="22" column="1" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="1" />
+          <folding>
+            <marker date="1460993716322" expanded="true" signature="221:246" placeholder="..." />
+            <marker date="1460993716322" expanded="true" signature="221:347" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Profile.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.625">
+          <caret line="14" column="1" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/ProfileController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-13.75">
+          <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+          <folding>
+            <element signature="e#40#70#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/AbstractProfiler.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.28965518">
+          <caret line="19" column="1" selection-start-line="19" selection-start-column="1" selection-end-line="19" selection-end-column="1" />
           <folding />
         </state>
       </provider>

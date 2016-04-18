@@ -28,6 +28,8 @@ Route::group(['middleware' => ['web']], function () {
         Cache::forget('query.users');
     });
 
+    Route::get('profile', 'ProfileController@show');
+
     Route::get('users', 'UsersController@index');
     Route::post('users', 'UsersController@store');
     Route::put('users', 'UsersController@update');
