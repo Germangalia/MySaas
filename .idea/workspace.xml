@@ -2,13 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3ffe46a6-566a-47b0-b1de-e3fb0fda7011" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/AbstractProfiler.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/CreadorDePerfilesHTML.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/CreadorDePerfilesJson.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Profile.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/routes.php" afterPath="$PROJECT_DIR$/app/Http/routes.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/User.php" afterPath="$PROJECT_DIR$/app/User.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/app.php" afterPath="$PROJECT_DIR$/config/app.php" />
     </list>
     <ignored path="MySaas.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -46,8 +40,8 @@
       <file leaf-file-name="routes.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Http/routes.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-16.458334">
-              <caret line="36" column="0" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
+            <state vertical-scroll-proportion="-15.833333">
+              <caret line="35" column="54" selection-start-line="35" selection-start-column="54" selection-end-line="35" selection-end-column="54" />
               <folding />
             </state>
           </provider>
@@ -56,11 +50,31 @@
       <file leaf-file-name="ProfileController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/ProfileController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-13.75">
-              <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+            <state vertical-scroll-proportion="-11.875">
+              <caret line="19" column="39" selection-start-line="19" selection-start-column="39" selection-end-line="19" selection-end-column="39" />
               <folding>
                 <element signature="e#40#70#0#PHP" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ProfileProvider.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/Providers/ProfileProvider.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.57931036">
+              <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="app.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config/app.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-20.833334">
+              <caret line="135" column="45" selection-start-line="135" selection-start-column="45" selection-end-line="135" selection-end-column="45" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -100,10 +114,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AbstractProfiler.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="AbstractProfiler.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/AbstractProfiler.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.28965518">
+            <state vertical-scroll-proportion="-8.75">
               <caret line="19" column="1" selection-start-line="19" selection-start-column="1" selection-end-line="19" selection-end-column="1" />
               <folding />
             </state>
@@ -138,8 +152,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/resources/assets/less/admin-lte/skins/_all-skins.less" />
-        <option value="$PROJECT_DIR$/vendor/acacha/admin-lte-template-laravel/resources/views/layouts/partials/htmlheader.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/layouts/app.blade.php" />
         <option value="$PROJECT_DIR$/public/css/main.css" />
         <option value="$PROJECT_DIR$/resources/views/plans.blade.php" />
@@ -189,6 +201,8 @@
         <option value="$PROJECT_DIR$/app/CreadorDePerfilesJson.php" />
         <option value="$PROJECT_DIR$/app/CreadorDePerfilesHTML.php" />
         <option value="$PROJECT_DIR$/app/AbstractProfiler.php" />
+        <option value="$PROJECT_DIR$/app/Providers/ProfileProvider.php" />
+        <option value="$PROJECT_DIR$/config/app.php" />
       </list>
     </option>
   </component>
@@ -517,7 +531,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
+              <option name="myItemId" value="config" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -532,86 +546,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Listeners" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MySaas" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MySaas" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Http" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MySaas" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MySaas" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Http" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Controllers" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MySaas" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MySaas" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Events" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MySaas" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MySaas" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Console" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -622,7 +556,7 @@
   <component name="PropertiesComponent">
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Phaser/hellophaser" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="SearchEverywhereHistoryKey" value="rou&#9;FILE&#9;file:///home/ggalia84/Code/laravels/MySaas/app/Http/routes.php&#10;user&#9;FILE&#9;file:///home/ggalia84/Code/laravels/MySaas/app/User.php&#10;event&#9;FILE&#9;file:///home/ggalia84/Code/laravels/MySaas/app/Providers/EventServiceProvider.php&#10;eventpro&#9;null&#9;null&#10;routes&#9;FILE&#9;file:///home/ggalia84/Code/laravels/MySaas/app/Http/routes.php&#10;report&#9;null&#9;null&#10;html&#9;FILE&#9;file:///home/ggalia84/Code/laravels/MySaas/resources/views/layouts/partials/htmlheader.blade.php&#10;css&#9;FILE&#9;file:///home/ggalia84/Code/laravels/MySaas/public/css/main.css&#10;scripts&#9;FILE&#9;file:///home/ggalia84/Code/laravels/MySaas/resources/views/layouts/partials/scripts.blade.php&#10;repor&#9;null&#9;null&#10;side&#9;FILE&#9;file:///home/ggalia84/Code/laravels/MySaas/resources/views/layouts/partials/sidebar.blade.php&#10;showcase&#9;null&#9;null&#10;app&#9;FILE&#9;file:///home/ggalia84/Code/laravels/MySaas/bootstrap/app.php&#10;htmlhead&#9;FILE&#9;file:///home/ggalia84/Code/laravels/MySaas/vendor/acacha/admin-lte-template-laravel/resources/views/layouts/partials/htmlheader.blade.php&#10;dashboardPage&#9;null&#9;null&#10;register&#9;FILE&#9;file:///home/ggalia84/Code/laravels/MySaas/resources/views/auth/partials/register.blade.php&#10;login&#9;FILE&#9;file:///home/ggalia84/Code/laravels/MySaas/resources/views/auth/login.blade.php&#10;servi&#9;FILE&#9;file:///home/ggalia84/Code/laravels/MySaas/config/services.php&#10;varia&#9;FILE&#9;file:///home/ggalia84/Code/laravels/MySaas/resources/assets/less/admin-lte/variables.less&#10;sidebar&#9;FILE&#9;file:///home/ggalia84/Code/laravels/MySaas/resources/views/layouts/partials/sidebar.blade.php" />
+    <property name="SearchEverywhereHistoryKey" value="profilepro&#9;null&#9;null&#10;rou&#9;FILE&#9;file:///home/ggalia84/Code/laravels/MySaas/app/Http/routes.php&#10;user&#9;FILE&#9;file:///home/ggalia84/Code/laravels/MySaas/app/User.php&#10;event&#9;FILE&#9;file:///home/ggalia84/Code/laravels/MySaas/app/Providers/EventServiceProvider.php&#10;eventpro&#9;null&#9;null&#10;routes&#9;FILE&#9;file:///home/ggalia84/Code/laravels/MySaas/app/Http/routes.php&#10;report&#9;null&#9;null&#10;html&#9;FILE&#9;file:///home/ggalia84/Code/laravels/MySaas/resources/views/layouts/partials/htmlheader.blade.php&#10;css&#9;FILE&#9;file:///home/ggalia84/Code/laravels/MySaas/public/css/main.css&#10;scripts&#9;FILE&#9;file:///home/ggalia84/Code/laravels/MySaas/resources/views/layouts/partials/scripts.blade.php&#10;repor&#9;null&#9;null&#10;side&#9;FILE&#9;file:///home/ggalia84/Code/laravels/MySaas/resources/views/layouts/partials/sidebar.blade.php&#10;showcase&#9;null&#9;null&#10;app&#9;FILE&#9;file:///home/ggalia84/Code/laravels/MySaas/bootstrap/app.php&#10;htmlhead&#9;FILE&#9;file:///home/ggalia84/Code/laravels/MySaas/vendor/acacha/admin-lte-template-laravel/resources/views/layouts/partials/htmlheader.blade.php&#10;dashboardPage&#9;null&#9;null&#10;register&#9;FILE&#9;file:///home/ggalia84/Code/laravels/MySaas/resources/views/auth/partials/register.blade.php&#10;login&#9;FILE&#9;file:///home/ggalia84/Code/laravels/MySaas/resources/views/auth/login.blade.php&#10;servi&#9;FILE&#9;file:///home/ggalia84/Code/laravels/MySaas/config/services.php&#10;varia&#9;FILE&#9;file:///home/ggalia84/Code/laravels/MySaas/resources/assets/less/admin-lte/variables.less&#10;sidebar&#9;FILE&#9;file:///home/ggalia84/Code/laravels/MySaas/resources/views/layouts/partials/sidebar.blade.php" />
     <property name="js-jscs-nodeInterpreter" value="/usr/local/bin/node" />
     <property name="settings.editor.selected.configurable" value="Settings.JavaScript" />
     <property name="JavaScriptPreferStrict" value="false" />
@@ -740,20 +674,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/ecc2723d-0043-4a83-bd88-d29af7709d1e/console.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/ExampleTest.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.625">
-          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/1ea932f4-c08f-42bd-9c7a-141855ff97f1/console.sql">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1058,30 +978,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/routes.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-16.458334">
-          <caret line="36" column="0" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/UsersController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-13.958333">
           <caret line="51" column="44" selection-start-line="51" selection-start-column="44" selection-end-line="51" selection-end-column="44" />
           <folding>
-            <element signature="e#40#53#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/User.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-22.5">
-          <caret line="38" column="0" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
-          <folding>
-            <marker date="1460992341373" expanded="true" signature="572:691" placeholder="..." />
+            <element signature="e#40#53#0#PHP" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1092,6 +994,24 @@
           <caret line="11" column="28" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="28" />
           <folding>
             <marker date="1460993716314" expanded="true" signature="221:349" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/AbstractProfiler.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-8.75">
+          <caret line="19" column="1" selection-start-line="19" selection-start-column="1" selection-end-line="19" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/ProfileController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-11.875">
+          <caret line="19" column="39" selection-start-line="19" selection-start-column="39" selection-end-line="19" selection-end-column="39" />
+          <folding>
+            <element signature="e#40#70#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1107,6 +1027,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/routes.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-15.833333">
+          <caret line="35" column="54" selection-start-line="35" selection-start-column="54" selection-end-line="35" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/User.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-22.5">
+          <caret line="38" column="0" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
+          <folding>
+            <marker date="1460992341373" expanded="true" signature="572:691" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/Profile.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-5.625">
@@ -1115,20 +1053,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/ProfileController.php">
+    <entry file="file://$PROJECT_DIR$/config/app.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-13.75">
-          <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-          <folding>
-            <element signature="e#40#70#0#PHP" expanded="true" />
-          </folding>
+        <state vertical-scroll-proportion="-20.833334">
+          <caret line="135" column="45" selection-start-line="135" selection-start-column="45" selection-end-line="135" selection-end-column="45" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/AbstractProfiler.php">
+    <entry file="file://$PROJECT_DIR$/app/Providers/ProfileProvider.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.28965518">
-          <caret line="19" column="1" selection-start-line="19" selection-start-column="1" selection-end-line="19" selection-end-column="1" />
+        <state vertical-scroll-proportion="0.57931036">
+          <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
           <folding />
         </state>
       </provider>
