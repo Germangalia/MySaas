@@ -44,6 +44,7 @@
                     <li><a href="{{url('reports/dailysales')}}">Informe de ventas</a></li>
                     <li><a href="{{url('reports/downloadInvoice')}}">DomPDF</a></li>
                     <li><a href="{{url('reports/createInvoice')}}">JsPDF</a></li>
+                    <li><a href="{{url('reports/shotout')}}">Shotout</a></li>
                     <li><a href="#">Link in level 2</a></li>
                 </ul>
             </li>

@@ -15,8 +15,8 @@ class ProfileController extends Controller
 
     public function show(Profile $profile)
     {
+        return $profile->show(Auth::user());
 //        $creator = new CreadorDePerfilesHTML();
 //        return Auth::user()->profile($creator);
-        return $profile->show(Auth::user());
     }
 }
