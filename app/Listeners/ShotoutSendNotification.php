@@ -1,7 +1,6 @@
 <?php
 
 namespace App\Listeners;
-
 use App\Events\ShotoutAdded;
 use Illuminate\Queue\InteractsWithQueue;
 use Illuminate\Contracts\Queue\ShouldQueue;
@@ -17,7 +16,6 @@ class ShotoutSendNotification
     {
         //
     }
-
     /**
      * Handle the event.
      *

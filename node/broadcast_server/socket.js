@@ -24,7 +24,7 @@ redis.on('pmessage', function(subscribed,channel, message) {
     io.emit(channel + ':' + message.event, message.data);
 });
 
-//Listen web socket on port 300
+//Listen web socket on port 3000
 http.listen(3000, function(){
     console.log('Listening on Port 3000');
 });

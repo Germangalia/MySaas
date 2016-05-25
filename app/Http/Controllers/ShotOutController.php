@@ -1,30 +1,29 @@
 <?php
-
 namespace App\Http\Controllers;
 
 use App\Events\ShotoutAdded;
-use App\ShotOut;
+use App\Shotout;
+use Auth;
+use Event;
 use Illuminate\Http\Request;
-
 use App\Http\Requests;
 
 class ShotOutController extends Controller
 {
-
     public function index()
     {
         return view('shotout');
     }
-
-    public function shotout(Request $requests)
+    public function shotout(Request $request)
     {
-        //venim de processar un formulari amb un botó de submit i un textarea.
-        //1- Validar.
-        //2- Persistencia, model, migracions, seeds, etc. Un lloc on guardar la notificació.
-        //3- Enviar.
-
-        $shotout = new ShotOut($requests);
-        event(new ShotoutAdded($shotout));
+        if ($request->message == null){
+            $request->message = "Error Notification";
+        }
+        $shotOut = new ShotOut();
+        $shotOut->message = $request->get('message');
+        $shotOut->user_id = Auth::user()->id;
+        $shotOut->save();
+        Event::fire(new ShotOutAdded($shotOut));
         return view('shotout');
     }
 }

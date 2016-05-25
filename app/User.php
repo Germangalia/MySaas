@@ -34,4 +34,10 @@ class User extends Authenticatable
 
         return $creadorDePerfiles->show($this);
     }
+
+
+    public function shoutOuts()
+    {
+         return $this->hasMany('App\ShoutOut');
+    }
 }

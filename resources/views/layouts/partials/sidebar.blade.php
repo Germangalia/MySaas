@@ -38,13 +38,13 @@
             <li><a href="{{url('onesignal')}}"><i class='fa fa-link'></i> <span>Send OneSignal Notification</span></a></li>
             <li><a href="{{url('reports')}}"><i class='fa fa-link'></i> <span>Pricing Table</span></a></li>
             <li><a href="{{url('users')}}"><i class='fa fa-link'></i> <span>Usuaris</span></a></li>
+            <li><a href="{{ url('shotout') }}"><i class='fa fa-link'></i> <span>Shotout</span></a></li>
             <li class="treeview">
                 <a href="#"><i class='fa fa-link'></i> <span>Reports</span> <i class="fa fa-angle-left pull-right"></i></a>
                 <ul class="treeview-menu">
                     <li><a href="{{url('reports/dailysales')}}">Informe de ventas</a></li>
                     <li><a href="{{url('reports/downloadInvoice')}}">DomPDF</a></li>
                     <li><a href="{{url('reports/createInvoice')}}">JsPDF</a></li>
-                    <li><a href="{{url('reports/shotout')}}">Shotout</a></li>
                     <li><a href="#">Link in level 2</a></li>
                 </ul>
             </li>

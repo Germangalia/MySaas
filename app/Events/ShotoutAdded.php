@@ -1,29 +1,27 @@
 <?php
-
 namespace App\Events;
 
 use App\Events\Event;
-use App\Http\Controllers\ShotOutController;
-use App\ShotOut;
+use App\Shotout;
 use Illuminate\Queue\SerializesModels;
 use Illuminate\Contracts\Broadcasting\ShouldBroadcast;
 
 class ShotoutAdded extends Event implements ShouldBroadcast
 {
     use SerializesModels;
-
-    public $shotout;
-
     /**
-     * Create a new event instance.
-     *
-     * @return void
+     * @var Shotout
      */
-    public function __construct(ShotOut $shotout)
+    public $shotout;
+    /**
+     * ShotoutAdded constructor.
+     * @param Shotout $shotout
+     */
+    public function __construct(Shotout $shotout)
     {
+        //
         $this->shotout = $shotout;
     }
-
     /**
      * Get the channels the event should be broadcast on.
      *
@@ -31,7 +29,6 @@ class ShotoutAdded extends Event implements ShouldBroadcast
      */
     public function broadcastOn()
     {
-        //Diem en quin canal es publica l'esdeveniment per a la llista de subscriptors.
-        return ['shoutout-added'];
+        return ['shotout-added'];
     }
 }
