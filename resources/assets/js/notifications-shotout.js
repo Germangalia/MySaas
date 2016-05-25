@@ -14,14 +14,8 @@ var notifyUser = function (data) {
         });
     });
 };
-Pusher.log = function(message) {
-    if (window.console && window.console.log) {
-        window.console.log(message);
-    }
-};
-var pusher = new Pusher('ba0fa7b0552a521ea021', {
-    encrypted: true
-});
 
-var channel = pusher.subscribe('shotout-added');
-channel.bind("App\\Events\\ShotoutAdded", notifyUser);
+var socket = io('http://localhost:3000');
+socket.on('shotout-added', function(msg){
+    notifyUser(msg);
+});

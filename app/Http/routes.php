@@ -35,7 +35,7 @@ Route::group(['middleware' => ['web']], function () {
     Route::put('users', 'UsersController@update');
     Route::delete('users', 'UsersController@destroy');
 
-    Route::get('shotout', 'ShotOutController@index');
+    Route::get('shoutout', 'ShotOutController@index');
     Route::post('shoutout', 'ShotOutController@shotout');
 
     Route::get('reports/createInvoice', 'JsPDFController@createInvoice');
